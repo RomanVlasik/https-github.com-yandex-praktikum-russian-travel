@@ -1704,6 +1704,13 @@ text-align: center;
     align-items: center;
 }
 
+.footer {
+    height: 116px;
+    background-color: #000103;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 767px) {
     .footer {
         width: 100%;
@@ -1760,7 +1767,7 @@ text-align: center;
 @media screen and (max-width: 767px) {
     .footer__textone {
         padding-top: 20px;
-        margin-left: 5px;
+        margin-left: 10%;
         width: 100px;
     }
 }
@@ -1805,7 +1812,7 @@ text-align: center;
         margin-left: 0px;
         text-align: start;
         margin-top: 20px;
-        margin-left: 5px;
+        margin-left: 11%;
     }
 }
 
@@ -1845,7 +1852,7 @@ text-align: center;
         font-size: 20px;
         text-align: start;
         margin-top: 20px;
-        margin-left: 5px;
+        margin-left: 11%;
         padding-bottom: 30px;
     }
 }
