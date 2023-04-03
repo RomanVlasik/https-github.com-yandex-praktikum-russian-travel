@@ -1,5 +1,7 @@
 /*Общие настройки*/
-
+body {
+    cursor: url('../image/icons8-blue-pointer-48.png'),auto;
+}
 
 .page {
     background-color: #2A2C2F;
@@ -25,6 +27,11 @@
 @media screen and (max-width: 767px) {
     .content {
         width: 100%;
+    }
+
+    .shapka {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -124,6 +131,8 @@ text-align: center;
         font-size: 30px;
         margin-top: 3.5px;
         margin-right: 7px;
+        margin-left: auto;
+        margin-right: 20px;
     }
 }
 
@@ -168,6 +177,12 @@ text-align: center;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
+}
+
+.header__subtitle:hover {
+    opacity: 0.5;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -184,13 +199,23 @@ text-align: center;
     }
 }
 
+.footer__div {
+    width: auto;
+}
+
 @media screen and (max-width: 767px) {
     .header__subtitle {
-        display: none;
+        text-align: center;
         font-size: 32px;
         position: absolute;
         top: 100px;
         
+    }
+
+    .footer__div {
+        width: 287px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -209,7 +234,10 @@ text-align: center;
 
 @media screen and (max-width: 767px) {
     .header__heading {
+        
         margin-top: 42px;
+        margin-left: 7%;
+        
     }
 }
 /*Основная страница*/
@@ -291,6 +319,12 @@ text-align: center;
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.main__subtitle:hover {
+    opacity: 0.5;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -333,6 +367,7 @@ text-align: center;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -367,6 +402,7 @@ text-align: center;
     border: 3px solid rgba(0, 0, 0, 1);
     margin-right: 45px;
     margin-bottom: 25px;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -397,7 +433,7 @@ text-align: center;
 }
 
 .main__button:hover {
-    background-color: #ffa500;
+    background-color: #FFD700;
 }
 
 .main__link {
@@ -579,24 +615,54 @@ text-align: center;
 }
 
 .main__orderblock {
-    width: 501px;
-    height: 230px;
-    top: 195px;
-    right: 48px;
+    width: 503px;
+    height: 250px;
+    top: 185px;
+    right: 40px;
     background-color: #FFFFFF;
     position: absolute;
-    opacity: 0;
     border-radius: 30px;
-    display: flex;
     justify-content: center;
+    display: none;
+    z-index: -3;
+    border: #066fc4 5px solid;
+}
+
+.main__orderblock-active {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .main__orderblock {
+    width: 365px;
+    height: 250px;
+    top: 190px;
+    right: 5px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
+    .main__orderblock {
+        width: 365px;
+        height: 250px;
+        top: 320px;
+        right: 25px;
+        }
 }
 
 @media screen and (max-width: 767px) {
-
+    .main__orderblock {
+        width: 300px;
+        height: 250px;
+        top: 1365px;
+        position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+        }
 }
 
 .main__orderblock_text {
@@ -612,17 +678,84 @@ text-align: center;
     margin: 0;
     padding: 0;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
-.main__orderblock:hover {
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .main__orderblock_text {
+        width: 365px;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main__orderblock_text {
+        width: 365px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__orderblock_text {
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+.ttt {
+    width: 500px;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .ttt {
+        width: 365px;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ttt {
+        width: 365px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ttt {
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+.main__crest {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -5px;
+    top: -50px;
+}
+
+.main__crest:hover {
+    opacity: 0.5;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+}
+
+/*.main__orderblock:hover {
     opacity: 0;
+    display: none;
     animation: ani 1s forwards;
   }
   @keyframes ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
-
+*/
 /*Преймущества*/
 .advantages_title {
     background-color: #1F1F1F;
@@ -1021,7 +1154,7 @@ text-align: center;
     .number__content {
         display: block;
         position: relative;
-        height: 160px;
+        height: 100px;
     }
 }
 
@@ -1082,6 +1215,7 @@ text-align: center;
     }
 
     .number__img {
+        display: none;
         position: absolute;
         left: -5%;
         width: 90px;
@@ -1097,6 +1231,12 @@ text-align: center;
     text-align: center;
     color: #FFFFFF;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
+}
+
+.number__subtitle:hover {
+    opacity: 0.5;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -1167,13 +1307,16 @@ text-align: center;
 
 @media screen and (max-width: 767px) {
     .number__subtitle {
-        display: none;
-        font-size: 35px;
+        font-size: 22px;
         width: 320px;
         margin-top: 0px;
         margin-bottom: 0px;
-        margin-left: auto;
-        margin-right: auto;
+        position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
     }
 }
 
@@ -1506,12 +1649,21 @@ text-align: center;
 
 @media screen and (max-width: 767px) {
     .footer {
-        width: 100%;
         height: 260px;
         display: block;  
     }
 }
 
+@media screen and (max-width: 767px) {
+.footer_div{
+    width: 320px;
+    height: 260px;
+    display: flex;  
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
 .footer__textone {
     font-family: 'Inter';
     font-style: normal;
@@ -1523,7 +1675,20 @@ text-align: center;
     margin: 0;
     padding: 0;
     margin-left: 21px;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
 }
+
+@media screen and (max-width: 767px) {
+    .footer__textone { 
+        margin-right: 100px;
+    }
+}
+
+.footer__textone:hover {
+    opacity: 0.5;
+}
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .footer__textone {
@@ -1551,6 +1716,12 @@ text-align: center;
     margin: 0;
     padding: 0;
     margin-left: 107px;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
+}
+
+.footer__texttwo:hover {
+    opacity: 0.5;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
