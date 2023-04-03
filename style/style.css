@@ -45,6 +45,63 @@ body {
     position: relative;
 }
 
+.header__one {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+}
+
+.header__two {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    cursor: url('../image/icons8-курсор-рука-50.png'), auto;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header__one {
+        display: flex;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+width: 200px;
+top: 100px;
+    }
+
+    .header__two {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 300px;
+        top: 150px;
+        font-size: 34px;
+    }
+}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
     .header {
         width: 1024px;
@@ -206,10 +263,10 @@ text-align: center;
 @media screen and (max-width: 767px) {
     .header__subtitle {
         text-align: center;
-        font-size: 32px;
+        font-size: 39px;
         position: absolute;
         top: 100px;
-        
+        display: none;
     }
 
     .footer__div {
@@ -1649,12 +1706,16 @@ text-align: center;
 
 @media screen and (max-width: 767px) {
     .footer {
+        width: 320px;
         height: 260px;
-        display: block;  
+        display: grid;  
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (max-width: 767px) {
+
 .footer_div{
     width: 320px;
     height: 260px;
@@ -1705,7 +1766,7 @@ text-align: center;
 }
 
 .footer__texttwo {
-    width: 432px;
+    width: 450px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -1785,7 +1846,7 @@ text-align: center;
         text-align: start;
         margin-top: 20px;
         margin-left: 5px;
-
+        padding-bottom: 30px;
     }
 }
 
